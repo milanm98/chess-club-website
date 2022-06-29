@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
-import LandingPageImage from '../components/landing-page-image'
+import LandingPageCarousel from '../components/landing-page-carousel'
 
 const Home: NextPage = () => {
-  return <LandingPageImage />
+  return <LandingPageCarousel />
 }
 
 export default Home

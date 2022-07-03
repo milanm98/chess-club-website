@@ -13,51 +13,46 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window?: () => Window
-}
 
 const drawerWidth = 240
-const navItems = ['home', 'about', 'contact', 'testt']
+const navItems = [
+  { name: 'Početna', href: '' },
+  { name: 'Igrači', href: 'igraci' },
+  { name: 'O nama', href: 'o-nama' },
+  { name: 'Takmičenja', href: 'takmicenja' },
+  { name: 'Kontakt', href: 'kontakt' },
+]
 
-export default function Navbar(props: Props) {
+const Navbar = () => {
   const router = useRouter()
-  const { window } = props
   const [mobileOpen, setMobileOpen] = useState(false)
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen)
   }
-  console.log(router)
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+      <Typography variant="h6" sx={{ my: 2, fontWeight: 'bold' }}>
+        Š.K. GIMNAZIJALAC
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item.href} disablePadding>
             <ListItemButton
               onClick={() => {
-                router.push(`/${item}`)
+                router.push(`/${item.href}`)
               }}
               sx={{ textAlign: 'center' }}
             >
-              <ListItemText primary={item} />
+              <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
     </Box>
   )
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -73,22 +68,27 @@ export default function Navbar(props: Props) {
             <MenuIcon />
           </IconButton>
           <Typography
-            variant="h6"
+            variant="subtitle2"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', sm: 'block' },
+              fontWeight: 'bold',
+              mx: 3,
+            }}
           >
-            Logo
+            Š.K. GIMNAZIJALAC
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button
                 onClick={() => {
-                  router.push(`/${item}`)
+                  router.push(`/${item.href}`)
                 }}
-                key={item}
+                key={item.href}
                 sx={{ color: '#fff' }}
               >
-                {item}
+                {item.name}
               </Button>
             ))}
           </Box>
@@ -96,7 +96,6 @@ export default function Navbar(props: Props) {
       </AppBar>
       <Box component="nav">
         <Drawer
-          container={container}
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
@@ -117,3 +116,4 @@ export default function Navbar(props: Props) {
     </Box>
   )
 }
+export default Navbar

@@ -10,7 +10,6 @@
     "bs": "next build && next start"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.4",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "latest",

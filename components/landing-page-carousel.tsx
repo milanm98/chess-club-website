@@ -2,7 +2,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import SliderImages from './sliderImages.json'
-import { Container } from '@material-ui/core'
+import { Container } from '@mui/material'
 
 const settings = {
   dots: true,

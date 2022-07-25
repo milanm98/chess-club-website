@@ -1,21 +1,9 @@
-import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import SliderImages from './sliderImages.json'
+import Slider from 'react-slick'
+import SliderImages from '../../public/database/landing-page-images/sliderImages.json'
+import settings from './sliderSettings'
 import { Container } from '@mui/material'
-
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 200,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2500,
-  adaptiveHeight: true,
-  className: 'w-full',
-  arrows: false,
-}
 
 const LandingPageCarousel = () => {
   return (

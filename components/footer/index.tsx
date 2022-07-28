@@ -14,11 +14,9 @@ export default function Footer() {
       <Typography className="p-2 text-white text-sm lg:text-lg font-black">
         Trg Bratstva Jedinstva 23, Bačka Palanka 21400
       </Typography>
-      <img
-        className="mx-auto p-4 text-center w-32 h-32"
-        src="logo.jpg"
-        alt="logo"
-      ></img>
+      <Container className="w-32 h-32 mx-auto p-4 text-center">
+        <img className="aspect-auto" src="logo.jpg" alt="logo"></img>
+      </Container>
     </Container>
   )
 }

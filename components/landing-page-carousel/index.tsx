@@ -11,12 +11,17 @@ const LandingPageCarousel = () => {
       <Slider {...settings}>
         {SliderImages.map((image) => {
           return (
-            <img
+            <Container
+              key={`container-key-${image.key}`}
               className="h-[400px] lg:h-[700px]"
-              src={image.src}
-              key={image.key}
-              alt="nesto"
-            />
+            >
+              <img
+                className="aspect-auto"
+                src={image.src}
+                key={image.key}
+                alt="slika"
+              />
+            </Container>
           )
         })}
       </Slider>

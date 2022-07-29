@@ -7,7 +7,7 @@ import { Container } from '@mui/material'
 
 const LandingPageCarousel = () => {
   return (
-    <Container maxWidth="lg">
+    <Container disableGutters maxWidth="lg">
       <Slider {...settings}>
         {SliderImages.map((image) => {
           return (

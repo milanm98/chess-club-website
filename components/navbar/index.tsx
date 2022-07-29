@@ -63,7 +63,7 @@ const Navbar = () => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { md: 'none' } }}
           >
             <MenuIcon />
           </IconButton>
@@ -72,14 +72,14 @@ const Navbar = () => {
             component="div"
             sx={{
               flexGrow: 1,
-              display: { xs: 'none', sm: 'block' },
+              display: { xs: 'none', md: 'block' },
               fontWeight: 'bold',
               mx: 3,
             }}
           >
             Š.K. GIMNAZIJALAC
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: { xs: 'none', md: 'block' } }}>
             {navItems.map((item) => (
               <Button
                 onClick={() => {
@@ -103,7 +103,7 @@ const Navbar = () => {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { xs: 'block', md: 'none' },
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,

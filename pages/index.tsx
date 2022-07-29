@@ -10,8 +10,8 @@ const Home: NextPage = () => {
       <Head>
         <title>Š.K. Gimnazijalac</title>
         <meta
-          name="sahovsi klub gimnazijalac backa palanaka"
-          content="sahovsi klub gimnazijalac backa palanaka"
+          name="Sahovski klub Gimnazijalac Backa Palanaka"
+          content="Sahovski klub Gimnazijalac Backa Palanaka"
         />
         <link rel="icon" href="/logo.jpg" />
       </Head>

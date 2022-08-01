@@ -15,7 +15,7 @@ export default function Footer() {
         Trg Bratstva Jedinstva 23, Bačka Palanka 21400
       </Typography>
       <Container className="w-32 h-32 mx-auto p-4 text-center">
-        <img className="aspect-auto" src="logo.jpg" alt="logo"></img>
+        <img className="aspect-square" src="logo.jpg" alt="logo"></img>
       </Container>
     </Container>
   )

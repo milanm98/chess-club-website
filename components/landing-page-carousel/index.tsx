@@ -13,7 +13,7 @@ const LandingPageCarousel = () => {
           return (
             <Container
               key={`container-key-${image.key}`}
-              className="h-[400px] lg:h-[700px]"
+              className="min-h-[200px] lg:h-[700px] p-0 md:p-2"
             >
               <img
                 className="aspect-auto"

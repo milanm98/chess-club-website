@@ -288,6 +288,8 @@ const Igraci = () => {
           maxWidth: 1000,
           margin: 'auto',
           marginTop: 15,
+          width: '95%',
+          overflowX: 'auto',
         }}
         component={Paper}
       >

@@ -1,26 +1,19 @@
-import { Typography } from '@mui/material'
-import { Container } from '@mui/system'
-
 export default function Footer() {
   return (
-    <Container
-      className="mt-16 text-center"
-      maxWidth={false}
-      style={{ background: '#2E3B55' }}
-    >
-      <Typography className="p-2 text-white text-sm lg:text-lg font-black">
+    <div className="text-center bg-[#2E3B55]">
+      <p className="p-8 text-white text-sm lg:text-lg font-black">
         Šah Klub Gimnazijalac
-      </Typography>
-      <Typography className="p-2 text-red text-sm lg:text-lg font-black">
+      </p>
+      <p className="text-white text-sm lg:text-lg font-black">
         Trg Bratstva Jedinstva 23, Bačka Palanka 21400
-      </Typography>
-      <Container className="w-full mx-auto p-4 text-center flex justify-center items-center">
+      </p>
+      <div className="flex justify-center items-center">
         <img
-          className="w-16 md:w-24 h-16 md:h-24"
+          className="w-16 md:w-24 h-16 md:h-24 my-12"
           src="logo.jpg"
           alt="logo"
         ></img>
-      </Container>
-    </Container>
+      </div>
+    </div>
   )
 }

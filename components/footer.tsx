@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="text-center bg-[#2E3B55]">
+    <footer className="text-center bg-[#2E3B55]">
       <p className="p-8 text-white text-sm lg:text-lg font-black">
         Šah Klub Gimnazijalac
       </p>
@@ -14,6 +14,6 @@ export default function Footer() {
           alt="logo"
         ></img>
       </div>
-    </div>
+    </footer>
   )
 }

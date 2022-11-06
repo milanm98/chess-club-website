@@ -1,13 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Navbar from '../components/navbar'
-import Footer from '../components/footer'
 import LandingPageCarousel from '../components/landing-page-carousel'
 import Posts from '../components/posts'
+import Layout from '../components/layout'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Š.K. Gimnazijalac</title>
         <meta
@@ -16,12 +15,11 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/logo.jpg" />
       </Head>
-
-      <Navbar />
-      <LandingPageCarousel />
-      <Posts />
-      <Footer />
-    </div>
+      <Layout>
+        <LandingPageCarousel />
+        <Posts />
+      </Layout>
+    </>
   )
 }
 

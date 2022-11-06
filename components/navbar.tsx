@@ -1,119 +1,51 @@
-import AppBar from '@mui/material/AppBar'
-import Box from '@mui/material/Box'
-import Divider from '@mui/material/Divider'
-import Drawer from '@mui/material/Drawer'
-import IconButton from '@mui/material/IconButton'
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
-import ListItemButton from '@mui/material/ListItemButton'
-import ListItemText from '@mui/material/ListItemText'
-import MenuIcon from '@mui/icons-material/Menu'
-import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
+import Link from 'next/link'
 import { useState } from 'react'
-import { useRouter } from 'next/router'
-
-const drawerWidth = 240
-const navItems = [
-  { name: 'Početna', href: '' },
-  { name: 'Igrači', href: 'igraci' },
-  { name: 'O nama', href: 'o-nama' },
-  { name: 'Takmičenja', href: 'takmicenja' },
-  { name: 'Kontakt', href: 'kontakt' },
-]
 
 const Navbar = () => {
-  const router = useRouter()
-  const [mobileOpen, setMobileOpen] = useState(false)
+  const [open, setOpen] = useState(false)
 
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen)
-  }
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2, fontWeight: 'bold' }}>
-        Š.K. GIMNAZIJALAC
-      </Typography>
-      <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item.href} disablePadding>
-            <ListItemButton
-              onClick={() => {
-                router.push(`/${item.href}`)
-              }}
-              sx={{ textAlign: 'center' }}
-            >
-              <ListItemText primary={item.name} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  )
+  const Links = [
+    { name: 'Početna', link: '' },
+    { name: 'Igrači', link: 'igraci' },
+    { name: 'O nama', link: 'o-nama' },
+    { name: 'Takmičenja', link: 'takmicenja' },
+    { name: 'Kontakt', link: 'kontakt' },
+  ]
 
   return (
-    <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav" style={{ background: '#2E3B55' }}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { md: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="subtitle2"
-            component="div"
-            sx={{
-              flexGrow: 1,
-              display: { xs: 'none', md: 'block' },
-              fontWeight: 'bold',
-              mx: 3,
-            }}
-          >
-            Š.K. GIMNAZIJALAC
-          </Typography>
-          <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-            {navItems.map((item) => (
-              <Button
-                onClick={() => {
-                  router.push(`/${item.href}`)
-                }}
-                key={item.href}
-                sx={{ color: '#fff' }}
-              >
-                {item.name}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </AppBar>
-      <Box component="nav">
-        <Drawer
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: 'block', md: 'none' },
-            '& .MuiDrawer-paper': {
-              boxSizing: 'border-box',
-              width: drawerWidth,
-            },
-          }}
+    <header className="shadow-md w-full fixed top-0 left-0 z-20">
+      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+        <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
+          <span className="text-xl text-indigo-600 mr-1 pt-2 uppercase font-mono">
+            Š.K. Gimnazijalac
+          </span>
+        </div>
+
+        <div
+          onClick={() => setOpen(!open)}
+          className="text-3xl absolute right-8 top-3 cursor-pointer md:hidden"
         >
-          {drawer}
-        </Drawer>
-      </Box>
-    </Box>
+          {open ? <button>&#x2715;</button> : <button>&#x2630;</button>}
+        </div>
+
+        <ul
+          className={` md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9  shadow-lg md:shadow-none transition-all duration-500 ease-in ${
+            open ? 'top-20' : 'top-[-490px]'
+          }`}
+        >
+          {Links.map((link) => (
+            <li key={link.name} className="md:ml-4 text-xl md:my-0 my-7">
+              <Link key={link.name} href={`/${link.link}`}>
+                <a className="text-gray-800 hover:text-gray-400 duration-500">
+                  {link.name}
+                </a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </header>
   )
 }
+
 export default Navbar

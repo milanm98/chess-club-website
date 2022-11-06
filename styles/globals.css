@@ -19,3 +19,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+tr:nth-child(even) {
+  background: rgb(247, 247, 247);
+}
+tr:nth-child(odd) {
+  background: white;
+}

@@ -1,11 +1,13 @@
-import Table from '@mui/material/Table'
-import TableBody from '@mui/material/TableBody'
-import TableCell from '@mui/material/TableCell'
-import TableContainer from '@mui/material/TableContainer'
-import TableHead from '@mui/material/TableHead'
-import TableRow from '@mui/material/TableRow'
-import Paper from '@mui/material/Paper'
+// import Table from '@mui/material/Table'
+// import TableBody from '@mui/material/TableBody'
+// import TableCell from '@mui/material/TableCell'
+// import TableContainer from '@mui/material/TableContainer'
+// import TableHead from '@mui/material/TableHead'
+// import TableRow from '@mui/material/TableRow'
+// import Paper from '@mui/material/Paper'
 import Layout from '../../components/layout'
+import PlayersTableDesktop from '../../components/players-table-desktop'
+import PlayersTableMobile from '../../components/players-table-mobile'
 
 const players = [
   {
@@ -283,44 +285,8 @@ const players = [
 const Igraci = () => {
   return (
     <Layout>
-      <TableContainer
-        sx={{
-          maxWidth: 1000,
-          margin: 'auto',
-          marginTop: 15,
-          width: '95%',
-          overflowX: 'auto',
-        }}
-        component={Paper}
-      >
-        <Table aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell align="center">Ime igrača</TableCell>
-              <TableCell align="center">Standard</TableCell>
-              <TableCell align="center">Rapid</TableCell>
-              <TableCell align="center">Blitz</TableCell>
-              <TableCell align="center">Lichess nalog</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {players.map((player) => (
-              <TableRow
-                key={player.id}
-                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-              >
-                <TableCell align="center">
-                  {player.name} {player.lastName}
-                </TableCell>
-                <TableCell align="center">{player.standard || '-'}</TableCell>
-                <TableCell align="center">{player.rapid || '-'}</TableCell>
-                <TableCell align="center">{player.blitz || '-'}</TableCell>
-                <TableCell align="center">{player.lichessAcc || '-'}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+      <PlayersTableDesktop players={players} />
+      <PlayersTableMobile players={players} />
     </Layout>
   )
 }

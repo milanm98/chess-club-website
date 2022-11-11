@@ -24,5 +24,17 @@ tr:nth-child(even) {
   background: rgb(247, 247, 247);
 }
 tr:nth-child(odd) {
-  background: white;
+  background: rgb(255, 255, 255);
+}
+
+.main-container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 90px 15px 20px 15px;
+}
+
+.table-title-min-width {
+  display: inline-block;
+  width: 100px;
 }

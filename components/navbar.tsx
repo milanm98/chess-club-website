@@ -16,9 +16,11 @@ const Navbar = () => {
     <header className="shadow-md w-full fixed top-0 left-0 z-20">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
         <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
-          <span className="text-xl text-indigo-600 mr-1 pt-2 uppercase font-mono">
-            Š.K. Gimnazijalac
-          </span>
+          <Link href="/">
+            <span className="text-xl text-indigo-600 mr-1 pt-2 uppercase font-mono">
+              Š.K. Gimnazijalac
+            </span>
+          </Link>
         </div>
 
         <div

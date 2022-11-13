@@ -1,12 +1,16 @@
+import { ReactNode } from 'react'
 import Footer from './footer'
 import Navbar from './navbar'
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const Layout = ({ children }: any) => {
+interface LayoutProps {
+  children: ReactNode
+}
+
+const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className="main-container">{children}</main>
       <Footer />
     </>
   )

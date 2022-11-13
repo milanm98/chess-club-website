@@ -2,7 +2,7 @@ import posts from '../public/database/landing-page-posts/posts.json'
 
 export default function Posts() {
   return (
-    <div className="m-0 md:mx-24">
+    <div>
       {posts.map((value) => {
         return (
           <div

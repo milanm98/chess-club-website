@@ -1,16 +1,9 @@
 import Link from 'next/link'
 import { useState } from 'react'
+import Links from '../settings/navbar-settings.json'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
-
-  const Links = [
-    { name: 'Početna', link: '' },
-    { name: 'Igrači', link: 'igraci' },
-    { name: 'O nama', link: 'o-nama' },
-    { name: 'Takmičenja', link: 'takmicenja' },
-    { name: 'Kontakt', link: 'kontakt' },
-  ]
 
   return (
     <header className="shadow-md w-full fixed top-0 left-0 z-20">

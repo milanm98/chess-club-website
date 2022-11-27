@@ -1,31 +1,28 @@
+import Link from 'next/link'
 import posts from '../public/database/landing-page-posts/posts.json'
 
 export default function Posts() {
   return (
-    <div>
+    <div className="flex flex-col md:flex-row my-16 gap-4 items-center justify-center md:flex-wrap">
       {posts.map((value) => {
         return (
           <div
+            className="max-w-sm rounded overflow-hidden shadow-2xl h-[500px] lg:h-[600px] relative"
             key={`posts-wrapper-${value.key}`}
-            className="flex flex-col md:flex-row my-32 gap-4 items-center"
           >
-            <div className="mx-12 md:mx-0 w-full md:w-1/2">
-              <p key={`title-${value.key}`}>{value.title}</p>
-              <p className="my-4" key={`author-${value.key}`}>
-                Autor : {value.author}
-              </p>
-              <p
-                className="w-full md:w-2/3 md:max-w-lg"
-                key={`description-${value.key}`}
-              >
-                {value.description}
-              </p>
-              <p className="my-4" key={`date-${value.key}`}>
-                {value.date}
+            <img
+              className="w-full"
+              src={value.src}
+              alt="Sunset in the mountains"
+            />
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">{value.title}</div>
+              <p className="text-gray-700 text-base">
+                {value.shortDescription}
               </p>
             </div>
-            <div className="w-full md:w-1/2">
-              <img src={value.src} alt={`posts-img-${value.key}`} />
+            <div className="px-6 pt-4 pb-2 absolute bottom-5">
+              <Link href={`/post/${value.key}`}>Procitaj vise -&gt;</Link>
             </div>
           </div>
         )

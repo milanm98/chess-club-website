@@ -1,7 +1,9 @@
+import Logo from '../public/logo.jpg'
+
 export default function Footer() {
   return (
-    <footer className="text-center bg-[#2E3B55] flex flex-col md:flex-row justify-between items-center">
-      <div className="ml-0 md:ml-16 lg:ml-32 xl:ml-64 2xl:ml-96">
+    <footer className="text-center bg-[#2E3B55] flex flex-col justify-between items-center">
+      <div>
         <p className="p-2 text-white text-sm lg:text-lg">
           Šah Klub Gimnazijalac
         </p>
@@ -12,13 +14,14 @@ export default function Footer() {
           Trg bratstva jedinstva 23, 21400 Backa Palanka, Srbija
         </p>
       </div>
-      <div className="mr-0 md:mr-16 lg:mr-32 xl:mr-64 2xl:mr-96 flex justify-center items-center">
+      <div className="flex justify-center items-center">
         <img
-          className="w-16 md:w-24 h-16 md:h-24 my-6 md:my-16"
-          src="logo.jpg"
+          className="w-16 md:w-24 h-16 md:h-24 my-6 md:mb-12"
+          src={Logo.src}
           alt="logo"
         ></img>
       </div>
+      <p className="text-white mb-2">Copyright @2022</p>
     </footer>
   )
 }

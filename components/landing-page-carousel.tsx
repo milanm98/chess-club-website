@@ -15,7 +15,7 @@ const LandingPageCarousel = () => {
               className="min-h-[250px] lg:h-[700px]"
             >
               <img
-                className="w-full h-full"
+                className="w-full h-full rounded-lg"
                 src={image.src}
                 key={image.key}
                 alt="slika"

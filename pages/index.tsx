@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import LandingPageCarousel from '../components/landing-page-carousel'
 import Posts from '../components/posts'
 import Layout from '../components/layout'
+import Header from '../components/header'
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <LandingPageCarousel />
+        <Header />
         <Posts />
       </Layout>
     </>

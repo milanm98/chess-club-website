@@ -1,29 +1,17 @@
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import Slider from 'react-slick'
+import { Carousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import SliderImages from '../public/database/landing-page-images/sliderImages.json'
-import settings from '../settings/sliderSettings'
 
 const LandingPageCarousel = () => {
   return (
     <div>
-      <Slider {...settings}>
-        {SliderImages.map((image) => {
-          return (
-            <div
-              key={`container-key-${image.key}`}
-              className="min-h-[250px] lg:h-[700px]"
-            >
-              <img
-                className="w-full h-full rounded-lg"
-                src={image.src}
-                key={image.key}
-                alt="slika"
-              />
-            </div>
-          )
-        })}
-      </Slider>
+      <Carousel useKeyboardArrows={true}>
+        {SliderImages.map((image) => (
+          <div className="slide" key={image.key}>
+            <img alt="image-slider" src={image.src} key={image.key} />
+          </div>
+        ))}
+      </Carousel>
     </div>
   )
 }

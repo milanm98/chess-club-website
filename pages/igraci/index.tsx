@@ -10,10 +10,12 @@ const Igraci: NextPage = () => {
       <Head>
         <title>Igrači</title>
       </Head>
-      <Layout>
-        <PlayersTableDesktop />
-        <PlayersTableMobile />
-      </Layout>
+      <main className="app-background-color">
+        <Layout>
+          <PlayersTableDesktop />
+          <PlayersTableMobile />
+        </Layout>
+      </main>
     </>
   )
 }

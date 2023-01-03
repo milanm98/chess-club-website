@@ -7,7 +7,7 @@ import Header from '../components/header'
 
 const Home: NextPage = () => {
   return (
-    <>
+    <main className="app-background-color">
       <Head>
         <title>Š.K. Gimnazijalac</title>
         <meta
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <Header />
         <Posts />
       </Layout>
-    </>
+    </main>
   )
 }
 

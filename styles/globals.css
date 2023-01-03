@@ -41,3 +41,23 @@ tr:nth-child(odd) {
 .landing-header {
   font-family: 'Courier New', Courier, monospace;
 }
+
+.app-background-color {
+  background-color: #b07d62;
+}
+
+.nav-background-color {
+  background-color: #5e503f;
+}
+
+.nav-text-color {
+  color: #a9927d;
+}
+
+.header-text-color {
+  color: #f2f4f3;
+}
+
+.text-color {
+  color: #0a0908;
+}

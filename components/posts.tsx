@@ -7,15 +7,15 @@ export default function Posts() {
       {posts.map((value) => {
         return (
           <div
-            className="max-w-sm rounded overflow-hidden shadow-2xl h-[500px] lg:h-[600px] relative"
+            className="max-w-sm rounded overflow-hidden shadow-2xl lg:h-[600px] relative"
             key={`posts-wrapper-${value.key}`}
           >
             <img
-              className="w-full"
+              className="w-full min-h-[300px]"
               src={value.src}
               alt="Sunset in the mountains"
             />
-            <div className="px-6 py-4">
+            <div className="px-6 py-4 min-h-[300px]">
               <div className="font-bold text-xl mb-2">{value.title}</div>
               <p className="text-gray-700 text-base">
                 {value.shortDescription}

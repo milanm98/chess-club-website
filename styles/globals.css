@@ -50,14 +50,6 @@ tr:nth-child(odd) {
   background-color: #5e503f;
 }
 
-.nav-text-color {
-  color: #a9927d;
-}
-
-.header-text-color {
-  color: #f2f4f3;
-}
-
 .text-color {
-  color: #0a0908;
+  color: #a9927d;
 }

@@ -7,7 +7,7 @@ const Error404 = () => {
       <img
         className="m-auto pt-24 pb-12"
         width={230}
-        src="chess-board.gif"
+        src="/chess-board.gif"
         alt="gif"
       />
       <h1 className="text-center text-2xl font-medium">

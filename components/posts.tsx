@@ -16,12 +16,14 @@ export default function Posts() {
               alt="Sunset in the mountains"
             />
             <div className="px-6 py-4 min-h-[300px]">
-              <div className="font-bold text-xl mb-2">{value.title}</div>
-              <p className="text-gray-700 text-base">
+              <div className="font-bold text-xl mb-2 text-color">
+                {value.title}
+              </div>
+              <p className="text-gray-700 text-base text-color">
                 {value.shortDescription}
               </p>
             </div>
-            <div className="px-6 pt-4 pb-2 absolute bottom-5">
+            <div className="px-6 pt-4 pb-2 absolute bottom-5 text-color">
               <Link href={`/post/${value.key}`}>Procitaj vise -&gt;</Link>
             </div>
           </div>

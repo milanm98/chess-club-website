@@ -21,7 +21,7 @@ export default function Footer() {
           alt="logo"
         ></img>
       </div>
-      <p className="text-color mb-2">Copyright @2023</p>
+      <p className="text-color mb-2">Copyright @{new Date().getFullYear()}</p>
     </footer>
   )
 }

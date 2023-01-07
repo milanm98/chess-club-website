@@ -4,6 +4,7 @@ import LandingPageCarousel from '../components/landing-page-carousel'
 import Posts from '../components/posts'
 import Layout from '../components/layout'
 import Header from '../components/header'
+import AboutUs from '../components/about-us'
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
         <LandingPageCarousel />
         <Header />
         <Posts />
+        <AboutUs />
       </Layout>
     </main>
   )

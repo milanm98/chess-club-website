@@ -16,6 +16,18 @@ export default function AboutUs() {
         druga bila 6. mesto. Sah klub Gimnazijalac kontinuirano sakuplja nove
         igrace, osnovce i srednjoskolce koji uz zabavu uce da igraju sah.
       </p>
+      <p className="my-12">
+        Prvenstvo kluba ŠK „Gimnazijalac“ - Šahovski klub „Gimnazijalac“ od
+        2020. god. tradicionalno održava prventsvo kluba u klasičnom šahu, koje
+        je namenjeno članovima kluba. Takmiči se u tri kategorije: za najboljeg
+        igrača, najboljeg omladinca i najboljeg juniora.
+      </p>
+      <p className="my-12">
+        „Turnir tri kluba“ – U saradnji tri šahovska kluba „Kraljev gambit“ iz
+        Bača, „Kulpin“ iz Kulpina i „Gimnazijalac“ iz Bačke Palanke od 2022. god
+        se organiziju zajednički turnir u klasičnom šahu. Na turniru učestvuju
+        igrači iz sva tri kluba.
+      </p>
     </div>
   )
 }

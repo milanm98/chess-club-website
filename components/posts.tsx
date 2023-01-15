@@ -14,6 +14,7 @@ export default function Posts() {
               className="w-full min-h-[300px]"
               src={value.src}
               alt="Sunset in the mountains"
+              loading="lazy"
             />
             <div className="px-6 py-4 min-h-[300px]">
               <div className="font-bold text-xl mb-2 text-color">

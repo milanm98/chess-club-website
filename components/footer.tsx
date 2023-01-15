@@ -19,6 +19,7 @@ export default function Footer() {
           className="w-16 md:w-24 h-16 md:h-24 my-6 md:mb-12"
           src={Logo.src}
           alt="logo"
+          loading="lazy"
         ></img>
       </div>
       <p className="text-color mb-2">Copyright @{new Date().getFullYear()}</p>

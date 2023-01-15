@@ -8,7 +8,12 @@ const LandingPageCarousel = () => {
       <Carousel useKeyboardArrows={true}>
         {SliderImages.map((image) => (
           <div className="slide" key={image.key}>
-            <img alt="image-slider" src={image.src} key={image.key} />
+            <img
+              className="max-w-[100vw]"
+              alt="image-slider"
+              src={image.src}
+              key={image.key}
+            />
           </div>
         ))}
       </Carousel>

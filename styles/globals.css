@@ -53,3 +53,7 @@ tr:nth-child(odd) {
 .text-color {
   color: #a9927d;
 }
+
+img {
+  object-fit: contain;
+}

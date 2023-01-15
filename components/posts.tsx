@@ -7,16 +7,13 @@ export default function Posts() {
       {posts.map((value) => {
         return (
           <div
-            className="max-w-sm rounded overflow-hidden shadow-2xl lg:h-[600px] relative"
+            className="max-w-sm rounded overflow-hidden shadow-2xl lg:h-[550px] relative"
             key={`posts-wrapper-${value.key}`}
           >
-            <img
-              className="w-full min-h-[300px]"
-              src={value.src}
-              alt="Sunset in the mountains"
-              loading="lazy"
-            />
-            <div className="px-6 py-4 min-h-[300px]">
+            <div className="h-[200px] lg:min-h-[300px]">
+              <img src={value.src} alt="Chess post" loading="lazy" />
+            </div>
+            <div className="px-6 py-4 lg:min-h-[200px]">
               <div className="font-bold text-xl mb-2 text-color">
                 {value.title}
               </div>
@@ -24,9 +21,11 @@ export default function Posts() {
                 {value.shortDescription}
               </p>
             </div>
-            <div className="px-6 pt-4 pb-2 absolute bottom-5 text-color">
-              <Link href={`/post/${value.key}`}>Procitaj vise -&gt;</Link>
-            </div>
+            <Link href={`/post/${value.key}`}>
+              <p className="px-6 py-2 lg:py-0 text-color cursor-pointer">
+                Procitaj vise -&gt;
+              </p>
+            </Link>
           </div>
         )
       })}

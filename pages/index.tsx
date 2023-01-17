@@ -17,10 +17,12 @@ const Home: NextPage = () => {
           name="description"
           content="Sahovski klub Gimnazijalac Backa Palanaka"
         />
+        <meta name="keywords" content="sah klub, gimnazijalac" />
         <meta
-          name="keywords"
-          content="Sahovski klub Gimnazijalac Backa Palanaka"
-        />
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
+        <meta charSet="utf-8"></meta>
       </Head>
       <Layout>
         <LandingPageCarousel />

@@ -17,15 +17,12 @@ const Home: NextPage = () => {
           name="description"
           content="Sahovski klub Gimnazijalac Backa Palanaka"
         />
+        <meta name="keywords" content="sah klub, gimnazijalac" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
         ></meta>
-        <link
-          rel="preload"
-          as="image"
-          href="https://skgimnazijalac.vercel.app/database/landing-page-images/image1.jpg"
-        ></link>
+        <meta charSet="utf-8"></meta>
       </Head>
       <Layout>
         <LandingPageCarousel />

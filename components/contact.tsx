@@ -1,7 +1,12 @@
+import ScrollHelper from '../helpers/scroll-helper'
+
 const Contact = () => {
   return (
-    <section id="kontakt" className="text-color text-center ">
-      <h1 className="my-6 text-3xl lg:text-4xl">Kontakt informacije:</h1>
+    <section className="text-color text-center ">
+      <div className="relative">
+        <ScrollHelper id="kontakt" classes="absolute bottom-28 invisible" />
+        <h1 className="my-6 text-3xl lg:text-4xl">Kontakt informacije:</h1>
+      </div>
       <div className="flex flex-col md:flex-row my-16 gap-4 items-center justify-center md:flex-wrap">
         <div className="max-w-sm rounded overflow-hidden shadow-2xl  relative">
           <div className="px-6 py-4 min-h-[300px] min-w-[300px]">

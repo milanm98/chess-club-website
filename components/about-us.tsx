@@ -1,10 +1,13 @@
+import ScrollHelper from '../helpers/scroll-helper'
+
 export default function AboutUs() {
   return (
-    <div
-      id="o-nama"
-      className="my-12 text-color text-center lg:mx-36 border-b-2 border-t-2 border-[#5e503f]"
-    >
-      <h1 className="my-6 text-3xl lg:text-4xl">O nama :</h1>
+    <div className="my-12 text-color text-center lg:mx-36 border-b-2 border-t-2 border-[#5e503f]">
+      <div className="relative">
+        <ScrollHelper id="o-nama" classes="absolute bottom-28 invisible" />
+        <h1 className="my-6 text-3xl lg:text-4xl">O nama :</h1>
+      </div>
+
       <p>
         Sah klub Gimnazijalac je osnovan 2015. godine, pre toga je bila sekcija
         u skoli koja je pocela 2007. godine. Od 2016. godine klub se takmici u

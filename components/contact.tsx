@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className=" text-color text-center ">
+    <section id="kontakt" className="text-color text-center ">
       <h1 className="my-6 text-3xl lg:text-4xl">Kontakt informacije:</h1>
       <div className="flex flex-col md:flex-row my-16 gap-4 items-center justify-center md:flex-wrap">
         <div className="max-w-sm rounded overflow-hidden shadow-2xl  relative">

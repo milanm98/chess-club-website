@@ -1,6 +1,9 @@
 export default function Tournaments() {
   return (
-    <div className="my-12 text-color text-center lg:mx-36 border-b-2 border-[#5e503f]">
+    <div
+      id="takmicenja"
+      className="my-12 text-color text-center lg:mx-36 border-b-2 border-[#5e503f]"
+    >
       <div className="text-color my-12">
         <h2 className="text-3xl lg:text-4xl">Ligaska takmicenja</h2>
       </div>

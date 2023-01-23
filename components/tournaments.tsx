@@ -5,9 +5,9 @@ export default function Tournaments() {
     <div className="my-12 text-color text-center lg:mx-36 border-b-2 border-[#5e503f]">
       <div className="text-color my-12 relative">
         <ScrollHelper id="takmicenja" classes="absolute bottom-28 invisible" />
-        <h2 className="text-3xl lg:text-4xl">Ligaska takmicenja</h2>
+        <h1>Ligaska takmicenja</h1>
       </div>
-      <h2 className="text-xl lg:text-2xl ">A tim:</h2>
+      <h2>A tim:</h2>
 
       <div className="text-color flex flex-col lg:flex-row flex-wrap gap-4 mx-auto my-0 w-3/4 mb-4 justify-center items-center">
         <a
@@ -67,7 +67,7 @@ export default function Tournaments() {
           Pregled sezone 2022
         </a>
       </div>
-      <h2 className="text-xl lg:text-2xl mt-6">B tim:</h2>
+      <h2>B tim:</h2>
 
       <div className=" mb-12 flex flex-col lg:flex-row flex-wrap mx-auto my-0 justify-center items-center">
         <a

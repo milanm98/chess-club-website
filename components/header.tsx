@@ -1,10 +1,8 @@
 export default function Header() {
   return (
-    <div className="w-full text-center">
-      <h1 className="text-color italic text-2xl lg:text-5xl top-5 p-4 my-8 font-semibold uppercase landing-header">
-        Sah klub svih bivsih, sadasnjih i buducih gimnazijalaca kao i ostalih
-        ljubitelja saha
-      </h1>
-    </div>
+    <h1 className="text-color italic text-3xl text-left lg:text-5xl mx-6 lg:mt-20 font-semibold uppercase landing-header">
+      Šah klub svih bivših, sadašnjih i budućih gimnazijalaca kao i ostalih
+      ljubitelja šaha
+    </h1>
   )
 }

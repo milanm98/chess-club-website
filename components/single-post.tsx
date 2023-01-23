@@ -13,21 +13,17 @@ export default function SinglePost() {
 
   return Posts[postsIndex] ? (
     <div className="w-full h-auto lg:p-12 text-center">
-      <h1 className="mb-6 text-lg uppercase text-color">
-        {Posts[postsIndex].title}
-      </h1>
+      <h1 className="mb-6  uppercase ">{Posts[postsIndex].title}</h1>
       <div className="flex justify-center my-6">
-        <h2 className="text-center w-2/3 font-semibold text-2xl text-color">
+        <h3 className="text-center w-2/3 font-semibold">
           {Posts[postsIndex].shortDescription}
-        </h2>
+        </h3>
       </div>
 
       <div className="flex flex-row gap-2 my-3 lg:gap-4 lg:gap-12 justify-center items-center">
-        <h2 className="text-sm text-color">Datum : {Posts[postsIndex].date}</h2>
-        <h2 className="text-color">|</h2>
-        <h3 className="text-sm text-color">
-          Autor posta : {Posts[postsIndex].author}
-        </h3>
+        <p>Datum : {Posts[postsIndex].date}</p>
+        <h2>|</h2>
+        <p>Autor posta : {Posts[postsIndex].author}</p>
       </div>
       <div className="flex justify-center">
         <img
@@ -37,9 +33,9 @@ export default function SinglePost() {
         />
       </div>
 
-      <h4 className="my-12 text-color lg:my-0 lg:mx-36 text-lg p-2 lg:p-12 first-letter:text-4xl first-letter:font-bold">
+      <p className="my-12 lg:my-0 lg:mx-36  p-2 lg:p-12 first-letter:text-4xl first-letter:font-bold">
         {Posts[postsIndex].description}
-      </h4>
+      </p>
     </div>
   ) : (
     <Custom404 />

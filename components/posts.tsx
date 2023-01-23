@@ -3,11 +3,11 @@ import posts from '../public/database/landing-page-posts/posts.json'
 
 export default function Posts() {
   return (
-    <div className="flex flex-col md:flex-row my-16 gap-4 items-center justify-center md:flex-wrap">
+    <div className="flex flex-col md:flex-row my-16 gap-6 items-center justify-center md:flex-wrap">
       {posts.map((value) => {
         return (
           <div
-            className="max-w-sm rounded overflow-hidden shadow-2xl lg:h-[550px] relative"
+            className="max-w-sm rounded overflow-hidden shadow-2xl lg:h-[550px] relative card-bg-color"
             key={`posts-wrapper-${value.key}`}
           >
             <div className="h-[200px] lg:min-h-[300px]">

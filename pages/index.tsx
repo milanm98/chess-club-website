@@ -13,8 +13,10 @@ const Home: NextPage = () => {
     <main className="app-background-color">
       <Layout>
         <Seo />
-        <LandingPageCarousel />
-        <Header />
+        <div className="flex flex-col md:flex-row">
+          <LandingPageCarousel />
+          <Header />
+        </div>
         <Posts />
         <AboutUs />
         <Tournaments />

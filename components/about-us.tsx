@@ -5,7 +5,7 @@ export default function AboutUs() {
     <div className="my-12 text-color text-center lg:mx-36 border-b-2 border-t-2 border-[#5e503f]">
       <div className="relative">
         <ScrollHelper id="o-nama" classes="absolute bottom-28 invisible" />
-        <h1 className="my-6 text-3xl lg:text-4xl">O nama :</h1>
+        <h1 className="my-6">O nama :</h1>
       </div>
 
       <p>

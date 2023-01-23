@@ -5,7 +5,7 @@ const Error404 = () => {
   return (
     <div className="m-auto flex flex-col">
       <img
-        className="m-auto pt-24 pb-12"
+        className="m-auto pt-24 pb-12 max-w-[230px]"
         width={230}
         src="/chess-board.gif"
         alt="gif"

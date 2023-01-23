@@ -1,7 +1,10 @@
+import ScrollHelper from '../helpers/scroll-helper'
+
 export default function Tournaments() {
   return (
     <div className="my-12 text-color text-center lg:mx-36 border-b-2 border-[#5e503f]">
-      <div className="my-12">
+      <div className="text-color my-12 relative">
+        <ScrollHelper id="takmicenja" classes="absolute bottom-28 invisible" />
         <h1>Ligaska takmicenja</h1>
       </div>
       <h2>A tim:</h2>

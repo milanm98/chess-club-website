@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="nav-background-color md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
         <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
           <Link href="/">
-            <span className="text-xl text-color mr-1 uppercase font-mono">
+            <span className="text-xl text-color-header-footer mr-1 uppercase font-mono">
               Š.K. Gimnazijalac
             </span>
           </Link>
@@ -18,7 +18,7 @@ const Navbar = () => {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-3 cursor-pointer md:hidden"
+          className="text-3xl text-color-header-footer absolute right-8 top-3 cursor-pointer md:hidden"
         >
           {open ? <button>&#x2715;</button> : <button>&#x2630;</button>}
         </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
           {Links.map((link) => (
             <li key={link.name} className="md:ml-4 text-xl md:my-0 my-7">
               <Link key={link.name} href={`/${link.link}`}>
-                <a className="text-color hover:text-gray-400 duration-500">
+                <a className="text-color-header-footer hover:text-gray-400 duration-500">
                   {link.name}
                 </a>
               </Link>

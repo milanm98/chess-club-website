@@ -23,8 +23,10 @@ const Home: NextPage = () => {
         />
       </Head>
       <Layout>
-        <LandingPageCarousel />
-        <Header />
+        <div className="flex flex-col md:flex-row">
+          <LandingPageCarousel />
+          <Header />
+        </div>
         <Posts />
         <AboutUs />
         <Tournaments />

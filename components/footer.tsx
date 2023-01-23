@@ -4,13 +4,9 @@ export default function Footer() {
   return (
     <footer className="text-center nav-background-color flex flex-col justify-between items-center">
       <div>
-        <p className="p-2 text-color text-sm lg:text-lg">
-          Šah Klub Gimnazijalac
-        </p>
-        <p className="text-color text-sm lg:text-lg">
-          gimnazijalacinfo@gmail.com
-        </p>
-        <p className="text-color text-sm lg:text-lg p-2">
+        <p className="p-2 text-color-header-footer">Šah Klub Gimnazijalac</p>
+        <p className="text-color-header-footer">gimnazijalacinfo@gmail.com</p>
+        <p className="text-color-header-footer p-2">
           Trg bratstva jedinstva 23, 21400 Backa Palanka, Srbija
         </p>
       </div>
@@ -21,7 +17,9 @@ export default function Footer() {
           alt="logo"
         ></img>
       </div>
-      <p className="text-color mb-2">Copyright @{new Date().getFullYear()}</p>
+      <p className="text-color-header-footer mb-2">
+        Copyright @{new Date().getFullYear()}
+      </p>
     </footer>
   )
 }

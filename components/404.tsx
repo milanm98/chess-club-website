@@ -10,9 +10,7 @@ const Error404 = () => {
         src="/chess-board.gif"
         alt="gif"
       />
-      <h1 className="text-center text-2xl font-medium">
-        Tražena stranica nije pronađena
-      </h1>
+      <h1 className="text-center">Tražena stranica nije pronađena</h1>
       <div className=" m-auto py-12">
         <button
           onClick={() => router.push('/')}

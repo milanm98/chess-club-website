@@ -1,15 +1,12 @@
-import { Carousel } from 'react-responsive-carousel'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import SliderImages from '../public/database/landing-page-images/sliderImages.json'
+import Carousel from './carosel'
 
 const LandingPageCarousel = () => {
   return (
     <div>
-      <Carousel useKeyboardArrows={true} autoPlay>
+      <Carousel show={1} withIndicator>
         {SliderImages.map((image) => (
-          <div className="slide " key={image.key}>
-            <img alt="image-slider" src={image.src} key={image.key} />
-          </div>
+          <img alt="image-slider" src={image.src} key={image.key} />
         ))}
       </Carousel>
     </div>

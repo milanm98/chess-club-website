@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './carosel.css';
+
 *,
 html {
   scroll-behavior: smooth !important;

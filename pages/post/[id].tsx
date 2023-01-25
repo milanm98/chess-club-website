@@ -9,11 +9,9 @@ const SinglePostPage: NextPage = () => {
       <Head>
         <title>Post</title>
       </Head>
-      <main className="app-background-color">
-        <Layout>
-          <SinglePost />
-        </Layout>
-      </main>
+      <Layout>
+        <SinglePost />
+      </Layout>
     </>
   )
 }

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useState } from 'react'
-import Links from '../settings/navbar-settings.json'
+import Links from '../public/database/navbar-data/navbar-data.json'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)

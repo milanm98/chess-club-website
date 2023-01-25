@@ -4,11 +4,9 @@ import Layout from '../../components/layout'
 
 const Custom404: NextPage = () => {
   return (
-    <main className="app-background-color">
-      <Layout>
-        <Error404 />
-      </Layout>
-    </main>
+    <Layout>
+      <Error404 />
+    </Layout>
   )
 }
 

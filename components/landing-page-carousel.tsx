@@ -1,5 +1,5 @@
 import SliderImages from '../public/database/landing-page-images/sliderImages.json'
-import Carousel from './carosel'
+import Carousel from './carousel'
 
 const LandingPageCarousel = () => {
   return (

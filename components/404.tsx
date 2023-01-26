@@ -1,15 +1,20 @@
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 const Error404 = () => {
   const router = useRouter()
   return (
     <div className="m-auto flex flex-col">
-      <img
-        className="m-auto pt-24 pb-12 max-w-[230px]"
-        width={230}
-        src="/chess-board.gif"
-        alt="gif"
-      />
+      <div className="relative m-auto pt-24 pb-12 w-[230px] h-[230px] max-w-[230px] max-h-[230px]">
+        <Image
+          priority
+          src="/chess-board.gif"
+          alt="gif"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+
       <h1 className="text-center">Tražena stranica nije pronađena</h1>
       <div className=" m-auto py-12">
         <button

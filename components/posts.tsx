@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import posts from '../public/database/landing-page-posts/posts.json'
 
@@ -10,8 +11,14 @@ export default function Posts() {
             className="max-w-sm rounded overflow-hidden shadow-2xl lg:h-[550px] relative card-bg-color"
             key={`posts-wrapper-${value.key}`}
           >
-            <div className="h-[200px] lg:min-h-[300px]">
-              <img src={value.src} alt="Chess post" loading="lazy" />
+            <div className="relative h-[200px] lg:min-h-[300px]">
+              <Image
+                src={value.src}
+                alt="Chess post"
+                loading="lazy"
+                layout="fill"
+                objectFit="cover"
+              />
             </div>
             <div className="px-6 py-4 lg:min-h-[200px]">
               <div className="font-bold text-xl mb-2 text-color">

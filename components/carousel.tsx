@@ -368,7 +368,7 @@ const Carousel = ({
     >
       <div
         data-testid="carousel-wrapper"
-        className={`carousel-wrapper ${wrapperClassName || ''}`}
+        className={`carousel-wrapper relative ${wrapperClassName || ''}`}
         {...wrapperProps}
       >
         {isRepeating || currentIndex > 0 ? (
@@ -398,7 +398,7 @@ const Carousel = ({
         >
           <div
             data-testid="carousel-content"
-            className={`carousel-content show-${show} ${
+            className={`carousel-content relative h-[250px] w-[95vw] md:w-[500px] lg:w-[600px] md:h-[500px] show-${show} ${
               contentClassName || ''
             }`}
             {...contentProps}

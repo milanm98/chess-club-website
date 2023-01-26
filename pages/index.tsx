@@ -1,28 +1,22 @@
 import type { NextPage } from 'next'
-import LandingPageCarousel from '../components/landing-page-carousel'
+import Seo from '../components/seo'
 import Posts from '../components/posts'
 import Layout from '../components/layout'
-import Header from '../components/header'
 import AboutUs from '../components/about-us'
 import Contact from '../components/contact'
 import Tournaments from '../components/tournaments'
-import Seo from '../components/seo'
+import HeroSection from '../components/hero-section'
 
 const Home: NextPage = () => {
   return (
-    <main className="app-background-color">
-      <Layout>
-        <Seo />
-        <div className="flex flex-col md:flex-row">
-          <LandingPageCarousel />
-          <Header />
-        </div>
-        <Posts />
-        <AboutUs />
-        <Tournaments />
-        <Contact />
-      </Layout>
-    </main>
+    <Layout>
+      <Seo />
+      <HeroSection />
+      <Posts />
+      <AboutUs />
+      <Tournaments />
+      <Contact />
+    </Layout>
   )
 }
 

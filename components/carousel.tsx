@@ -379,6 +379,9 @@ const Carousel = ({
               data-testid="left-button"
               onClick={previousItem}
               className="left-arrow-button"
+              title="left-button"
+              aria-label="left-button"
+              id="left-button"
             >
               <span className="left-arrow" />
             </button>
@@ -418,6 +421,9 @@ const Carousel = ({
               data-testid="right-button"
               onClick={nextItem}
               className="right-arrow-button"
+              title="right-button"
+              aria-label="right-button"
+              id="right-button"
             >
               <span className="right-arrow" />
             </button>

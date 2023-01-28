@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Layout from '../../components/layout'
-import ScrollHelper from '../../helpers/scroll-helper'
 import { NextPage } from 'next'
 
 const Takmicenja: NextPage = () => {
@@ -11,13 +10,9 @@ const Takmicenja: NextPage = () => {
       </Head>
       <main className="app-background-color">
         <Layout>
-          <div className="my-12 text-color text-center lg:mx-36 border-b-2 border-[#5e503f]">
+          <div className="my-12 text-color text-center lg:mx-36">
             <div className="text-color my-12 relative">
-              <ScrollHelper
-                id="takmicenja"
-                classes="absolute bottom-28 invisible"
-              />
-              <h1>Ligaska takmicenja</h1>
+              <h1 className="my-6">Ligaska takmicenja</h1>
             </div>
             <h2>A tim:</h2>
 

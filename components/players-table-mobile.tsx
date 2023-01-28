@@ -35,9 +35,16 @@ const PlayersTableMobile = () => {
             </div>
             <div className="text-sm text-gray-700">
               <span className="text-sm font-medium text-black table-title-min-width ">
-                Lichess nalog:
+                FIDE:
               </span>{' '}
-              {player.lichessAcc || '-'}
+              <a
+                rel="noreferrer"
+                target="_blank"
+                className="underline"
+                href={player.fideAccount}
+              >
+                Link
+              </a>
             </div>
           </div>
         )

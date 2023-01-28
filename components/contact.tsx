@@ -1,10 +1,7 @@
-import ScrollHelper from '../helpers/scroll-helper'
-
 const Contact = () => {
   return (
     <section className="text-color text-center ">
       <div className="relative">
-        <ScrollHelper id="kontakt" classes="absolute bottom-28 invisible" />
         <h1 className="my-6">Kontakt informacije:</h1>
       </div>
       <div className="flex flex-col md:flex-row my-16 gap-4 items-center justify-center md:flex-wrap">
@@ -51,7 +48,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="my-12 text-color  lg:mx-32 border-b-2  border-[#5e503f]" />
+      <div className="my-12 text-color  lg:mx-32" />
     </section>
   )
 }

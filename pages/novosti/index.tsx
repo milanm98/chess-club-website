@@ -8,11 +8,11 @@ const Novosti: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Igrači</title>
+        <title>Novosti</title>
       </Head>
       <main className="app-background-color">
         <Layout>
-          <h1 className="text-center font-black">Sve novosti</h1>
+          <h1 className="text-center my-6">Sve novosti</h1>
           <div className="flex flex-col md:flex-row my-16 gap-6 items-center justify-center md:flex-wrap">
             {posts.map((value) => {
               return (

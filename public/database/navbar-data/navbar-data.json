@@ -1,6 +1,6 @@
 [
   { "name": "Početna", "link": "/" },
+  { "name": "Novosti", "link": "/novosti" },
   { "name": "Igrači", "link": "/igraci" },
-  { "name": "Takmičenja", "link": "/takmicenja" },
-  { "name": "Novosti", "link": "/novosti" }
+  { "name": "Takmičenja", "link": "/takmicenja" }
 ]

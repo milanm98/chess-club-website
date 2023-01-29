@@ -19,7 +19,7 @@ const PlayersTableDesktop = () => {
               Blitz
             </th>
             <th className="w-32 p-3 text-sm font-semibold tracking-wide">
-              Lichess nalog
+              FIDE
             </th>
           </tr>
         </thead>
@@ -40,7 +40,14 @@ const PlayersTableDesktop = () => {
                   {player.blitz || '-'}
                 </td>
                 <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
-                  {player.lichessAcc || '-'}
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    className="underline"
+                    href={player.fideAccount}
+                  >
+                    Link
+                  </a>
                 </td>
               </tr>
             )

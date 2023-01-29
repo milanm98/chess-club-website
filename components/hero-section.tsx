@@ -1,17 +1,20 @@
-import Carousel from './carousel'
-import SliderImages from '../public/database/landing-page-images/sliderImages.json'
+import Image from 'next/image'
 
 const HeroSection = () => {
   return (
     <div className="flex flex-col md:flex-row">
-      <div>
-        <Carousel show={1} withIndicator>
-          {SliderImages.map((image) => (
-            <img alt="image-slider" src={image.src} key={image.key} />
-          ))}
-        </Carousel>
+      <div className="relative h-[300px] lg:h-[450px] w-full">
+        <div>
+          <Image
+            src="/database/hero-img.jpg"
+            alt="hero image"
+            layout="fill"
+            objectFit="contain"
+            priority={true}
+          />
+        </div>
       </div>
-      <h1 className="text-color italic text-3xl text-left lg:text-5xl mx-6 lg:mt-20 font-semibold uppercase landing-header">
+      <h1 className="text-color italic text-3xl text-left lg:text-4xl mx-6 lg:mt-16  font-semibold uppercase landing-header md:w-4/12">
         Šah klub svih bivših, sadašnjih i budućih gimnazijalaca kao i ostalih
         ljubitelja šaha
       </h1>

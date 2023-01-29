@@ -1,4 +1,5 @@
 import Logo from '../public/logo.jpg'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -10,13 +11,14 @@ export default function Footer() {
           Trg bratstva jedinstva 23, 21400 Backa Palanka, Srbija
         </p>
       </div>
-      <div className="flex justify-center items-center">
-        <img
-          className="w-16 md:w-24 h-16 md:h-24 my-6 md:mb-12"
+      <div className="relative w-16 md:w-24 h-16 md:h-24 my-6 md:mb-12">
+        <Image
+          alt="Footer logo"
           src={Logo.src}
-          alt="logo"
-          loading="lazy"
-        ></img>
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
       </div>
       <p className="text-color-header-footer mb-2">
         Copyright @{new Date().getFullYear()}

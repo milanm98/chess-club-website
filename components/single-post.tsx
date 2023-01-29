@@ -1,6 +1,7 @@
 import Posts from '../public/database/landing-page-posts/posts.json'
 import { useRouter } from 'next/router'
 import Custom404 from './404'
+import Image from 'next/image'
 
 export default function SinglePost() {
   const router = useRouter()
@@ -25,12 +26,16 @@ export default function SinglePost() {
         <h2>|</h2>
         <p>Autor posta : {Posts[postsIndex].author}</p>
       </div>
-      <div className="flex justify-center">
-        <img
-          className="h-[300px] lg:h-[500px] lg:w-[800px] rounded-3xl	"
-          alt="post image"
-          src={Posts[postsIndex].src}
-        />
+      <div className="flex justify-center items-center">
+        <div className="relative w-[95vw] h-[300px] lg:h-[500px] lg:w-[800px] rounded-3xl">
+          <Image
+            priority
+            alt="post image"
+            src={Posts[postsIndex].src}
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
       </div>
 
       <p className="my-12 lg:my-0 lg:mx-36  p-2 lg:p-12 first-letter:text-4xl first-letter:font-bold">

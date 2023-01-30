@@ -6,7 +6,7 @@
     "title": "Novogodisnji Cuger",
     "author": "Ivan Tot",
     "date": "29.12.2022",
-    "src": "/database/landing-page-posts/post1.jpg"
+    "src": "/database/landing-page-posts/post6.webp"
   },
   {
     "key": 2,
@@ -15,7 +15,7 @@
     "title": "Ligaski mec",
     "author": "Ivan Tot",
     "date": "15.05.2022",
-    "src": "/database/landing-page-posts/post2.jpg"
+    "src": "/database/landing-page-posts/post2.webp"
   },
   {
     "key": 3,
@@ -24,6 +24,6 @@
     "title": "Rapid Turnir",
     "author": "Ivan Tot",
     "date": "13.05.2022",
-    "src": "/database/landing-page-posts/post3.jpg"
+    "src": "/database/landing-page-posts/post3.webp"
   }
 ]

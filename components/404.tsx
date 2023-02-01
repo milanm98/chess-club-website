@@ -11,7 +11,7 @@ const Error404 = () => {
           src="/chess-board.gif"
           alt="gif"
           layout="fill"
-          objectFit="cover"
+          objectFit="fill"
         />
       </div>
 

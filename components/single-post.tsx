@@ -1,4 +1,4 @@
-import Posts from '../public/database/landing-page-posts/posts.json'
+import Posts from '../public/database/all-posts/all-posts.json'
 import { useRouter } from 'next/router'
 import Custom404 from './404'
 import Image from 'next/image'

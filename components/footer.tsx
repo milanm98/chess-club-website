@@ -16,7 +16,7 @@ export default function Footer() {
           alt="Footer logo"
           src={Logo.src}
           layout="fill"
-          objectFit="cover"
+          objectFit="fill"
           quality={100}
         />
       </div>

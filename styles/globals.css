@@ -14,7 +14,7 @@ body {
   background-color: #fafbfc;
   padding: 0;
   margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -58,10 +58,6 @@ p {
 .table-title-min-width {
   display: inline-block;
   width: 100px;
-}
-
-.landing-header {
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .app-background-color {

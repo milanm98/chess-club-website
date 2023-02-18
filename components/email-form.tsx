@@ -2,18 +2,25 @@ import React from 'react'
 
 export default function Registration() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleSubmit = async (e: any) => {
-    e.preventDefault()
-    const formData = new FormData(e.target)
-    const response = await fetch(e.target.action, {
-      method: 'POST',
-      body: formData,
-    })
-    const result = await response.json()
-    if (result.result === 'error') {
-      console.error(result.msg)
-    } else {
-      console.log('Successfully subscribed!')
+  const handleSubmit = async (event: any) => {
+    event.preventDefault()
+    const formData = new FormData(event.target)
+    try {
+      const response = await fetch(
+        `https://cors-anywhere.herokuapp.com/${event.target.action}`,
+        {
+          method: 'POST',
+          body: formData,
+        }
+      )
+      const result = await response.json()
+      if (result.result === 'error') {
+        console.error(result.msg)
+      } else {
+        console.log('Successfully subscribed!')
+      }
+    } catch (error) {
+      console.error(error)
     }
   }
   return (

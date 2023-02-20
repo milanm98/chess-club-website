@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import AboutUs from '../components/about-us'
 import Contact from '../components/contact'
 import HeroSection from '../components/hero-section'
-import Registration from '../components/email-form'
+import Registration from '../components/registration'
 
 const Home: NextPage = () => {
   return (

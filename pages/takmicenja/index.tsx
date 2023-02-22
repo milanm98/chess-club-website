@@ -11,7 +11,8 @@ const Takmicenja: NextPage = () => {
       <main className="app-background-color">
         <Layout>
           <div className="my-12 text-color text-center lg:mx-36">
-            <div className="text-color my-12 relative">
+          <div className="bg-white min-h-[200px] rounded-md shadow-xl p-6">
+            <div className="text-color mb-12 relative">
               <h1 className="my-6">Ligaska takmicenja:</h1>
             </div>
             <h2>A tim:</h2>
@@ -86,9 +87,11 @@ const Takmicenja: NextPage = () => {
                 Pregled sezone 2022
               </a>
             </div>
+            </div>
           </div>
           <div className="my-12 text-color text-center lg:mx-36">
-            <div className="text-color my-12 relative">
+          <div className="bg-white min-h-[200px] rounded-md shadow-xl p-6">
+            <div className="text-color mb-12 relative">
               <h1 className="my-6">Prvenstvo kluba:</h1>
               <p>
                 Odrzavalo se nezvanično od 2015.godine, a rejtinguje se od 2020.
@@ -123,80 +126,87 @@ const Takmicenja: NextPage = () => {
                 https://chess-results.com/tnr589944.aspx?lan=1
               </a>
             </div>
-          </div>
-          <div className="my-12 text-color text-center lg:mx-36">
-            <div className="text-color my-12 relative">
-              <h1 className="my-6">Turnir tri kluba:</h1>
-              <p>
-                U saradnji sa ŠK „Kulpin“ i ŠK „Kraljev gambit“ ustanovljeno je
-                pojedinačno prvenstvo na kojem prava imaju učešći našeg i dva
-                prijateljska kluba. Prvi je odrzan 2022. Godine, a namera je da
-                turnir postane tradicionalan.
-              </p>
-            </div>
-            <div className="text-color flex flex-col lg:flex-row flex-wrap gap-4 mx-auto my-0 w-3/4 mb-4 justify-center items-center">
-              <a
-                className="underline hover:text-zinc-600"
-                href=" https://chess-results.com/tnr609521.aspx?lan=1"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://chess-results.com/tnr609521.aspx?lan=1
-              </a>
-              <a
-                className="underline hover:text-zinc-600"
-                href="https://chess-results.com/tnr719224.aspx?lan=1"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://chess-results.com/tnr719224.aspx?lan=1
-              </a>
             </div>
           </div>
           <div className="my-12 text-color text-center lg:mx-36">
-            <div className="text-color my-12 relative">
-              <h1 className="my-6">Rapidi:</h1>
-            </div>
-            <div className="text-color flex flex-col lg:flex-row flex-wrap gap-4 mx-auto my-0 w-3/4 mb-4 justify-center items-center">
-              <a
-                className="underline hover:text-zinc-600"
-                href="https://chess-results.com/tnr392490.aspx?lan=1"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://chess-results.com/tnr392490.aspx?lan=1
-              </a>
-              <a
-                className="underline hover:text-zinc-600"
-                href="https://chess-results.com/tnr425307.aspx?lan=1&art=1"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://chess-results.com/tnr425307.aspx?lan=1&art=1
-              </a>
+            <div className="bg-white min-h-[200px] rounded-md shadow-xl p-6">
+              <div className="text-color mb-12 relative">
+                <h1 className="my-6">Turnir tri kluba:</h1>
+                <p>
+                  U saradnji sa ŠK „Kulpin“ i ŠK „Kraljev gambit“ ustanovljeno
+                  je pojedinačno prvenstvo na kojem prava imaju učešći našeg i
+                  dva prijateljska kluba. Prvi je odrzan 2022. Godine, a namera
+                  je da turnir postane tradicionalan.
+                </p>
+              </div>
+              <div className="text-color flex flex-col lg:flex-row flex-wrap gap-4 mx-auto my-0 w-3/4 mb-4 justify-center items-center">
+                <a
+                  className="underline hover:text-zinc-600"
+                  href=" https://chess-results.com/tnr609521.aspx?lan=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://chess-results.com/tnr609521.aspx?lan=1
+                </a>
+                <a
+                  className="underline hover:text-zinc-600"
+                  href="https://chess-results.com/tnr719224.aspx?lan=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://chess-results.com/tnr719224.aspx?lan=1
+                </a>
+              </div>
             </div>
           </div>
           <div className="my-12 text-color text-center lg:mx-36">
-            <div className="text-color my-12 relative">
-              <h1 className="my-6">Blicevi:</h1>
+            <div className="bg-white min-h-[200px] rounded-md shadow-xl p-6">
+              <div className="text-color relative">
+                <h1 className="my-6">Rapidi:</h1>
+              </div>
+              <div className="text-color flex flex-col lg:flex-row flex-wrap gap-4 mx-auto my-0 w-3/4 mb-4 justify-center items-center">
+                <a
+                  className="underline hover:text-zinc-600"
+                  href="https://chess-results.com/tnr392490.aspx?lan=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://chess-results.com/tnr392490.aspx?lan=1
+                </a>
+                <a
+                  className="underline hover:text-zinc-600"
+                  href="https://chess-results.com/tnr425307.aspx?lan=1&art=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://chess-results.com/tnr425307.aspx?lan=1&art=1
+                </a>
+              </div>
             </div>
-            <div className="text-color flex flex-col lg:flex-row flex-wrap gap-4 mx-auto my-0 w-3/4 mb-4 justify-center items-center">
-              <a
-                className="underline hover:text-zinc-600"
-                href="https://chess-results.com/tnr713466.aspx?lan=1"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://chess-results.com/tnr713466.aspx?lan=1
-              </a>
-              <a
-                className="underline hover:text-zinc-600"
-                href="https://chess-results.com/tnr698151.aspx?lan=1"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://chess-results.com/tnr698151.aspx?lan=1
-              </a>
+          </div>
+          <div className="my-12 text-color text-center lg:mx-36">
+            <div className="bg-white min-h-[200px] rounded-md shadow-xl p-6">
+              <div className="text-color relative">
+                <h1 className="my-6">Blicevi:</h1>
+              </div>
+              <div className="text-color flex flex-col lg:flex-row flex-wrap gap-4 mx-auto my-0 w-3/4 mb-4 justify-center items-center">
+                <a
+                  className="underline hover:text-zinc-600"
+                  href="https://chess-results.com/tnr713466.aspx?lan=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://chess-results.com/tnr713466.aspx?lan=1
+                </a>
+                <a
+                  className="underline hover:text-zinc-600"
+                  href="https://chess-results.com/tnr698151.aspx?lan=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://chess-results.com/tnr698151.aspx?lan=1
+                </a>
+              </div>
             </div>
           </div>
         </Layout>
